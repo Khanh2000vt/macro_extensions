@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Detect Events</title>
+    <style>
+      #box {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        margin: 100px auto;
+        padding: 20px;
+        text-align: center;
+        line-height: 100px;
+        border: 2px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">Click me</div>
+
+    <script>
+      const box = document.getElementById("box");
+
+      // Detect click outside
+      document.addEventListener("click", (e) => {
+        if (!box.contains(e.target)) {
+          console.log("❗ Clicked outside the box");
+        } else {
+          console.log("✅ Clicked inside the box");
+        }
+      });
+
+      // Detect tab visibility change
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "hidden") {
+          console.log("👋 Tab is hidden (user switched tabs or minimized)");
+        } else {
+          console.log("👀 Tab is visible again");
+        }
+      });
+
+      // Detect window blur/focus
+      window.addEventListener("blur", () => {
+        console.log("📴 Window lost focus (switched app or tab)");
+      });
+
+      window.addEventListener("focus", () => {
+        console.log("💡 Window got focus");
+      });
+
+      // Info: Cannot detect Extension icon click
+      console.warn(
+        "⚠️ Cannot detect Chrome extension icon clicks from a normal webpage"
+      );
+    </script>
+  </body>
+</html>

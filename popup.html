@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="api-section">
+        <h3>Cài đặt API Key</h3>
+        <div class="api-input-group">
+          <input
+            type="password"
+            id="apiKeyInput"
+            placeholder="Nhập Gemini API key của bạn..."
+          />
+          <div class="model-options">
+            <label>Chọn model:</label>
+            <select id="model-type">
+              <option value="gemini-2.5-pro">gemini-2.5-pro</option>
+              <option value="gemini-2.5-flash">gemini-2.5-flash</option>
+              <option value="gemini-2.5-flash-lite">
+                gemini-2.5-flash-lite
+              </option>
+              <option value="gemini-2.0-flash">gemini-2.0-flash</option>
+              <option value="gemini-2.0-flash-lite">
+                gemini-2.0-flash-lite
+              </option>
+            </select>
+          </div>
+          <div class="api-buttons">
+            <button id="saveApiKey">Lưu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

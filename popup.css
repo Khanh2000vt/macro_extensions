@@ -1,0 +1,108 @@
+body {
+  width: 350px;
+  padding: 10px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  background: "white";
+  color: white;
+}
+
+.container {
+  background: white;
+  color: #333;
+  border-radius: 12px;
+  padding: 20px;
+  margin: -20px;
+}
+
+.api-section {
+  margin-bottom: 20px;
+}
+
+.api-section h3 {
+  margin: 0 0 12px 0;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.api-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#apiKeyInput {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: monospace;
+  background: #f8f9fa;
+}
+
+#apiKeyInput:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.api-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+#saveApiKey {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+#saveApiKey {
+  background: #48bb78;
+  color: white;
+}
+
+#saveApiKey:hover {
+  background: #38a169;
+}
+
+.selected-text,
+.model-options {
+  margin-bottom: 16px;
+}
+
+.model-options label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.model-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.model-options div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#model-type {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  font-size: 13px;
+}
