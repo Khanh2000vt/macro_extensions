@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   saveApiKeyBtn.addEventListener("click", () => {
     const apiKey = apiKeyInput.value.trim();
     if (!apiKey) {
-      console.warn("Vui lòng nhập API key", "error");
+      alert("Vui lòng nhập API key");
       return;
     }
 
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         modelType: modelType,
       },
       () => {
-        console.warn("✅ API key đã được lưu!", "success");
+        alert("✅ API key đã được lưu!");
       }
     );
   });
